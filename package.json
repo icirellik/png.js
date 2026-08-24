@@ -52,9 +52,9 @@
     "build": "rimraf ./lib && rollup -c",
     "prettier": "prettier test/**/*.js png-node.js png.js --write"
   },
-  "engine": [
-    "node >= v0.6.0"
-  ],
+  "engines": {
+    "node": ">=18"
+  },
   "jest": {
     "setupFiles": [
       "<rootDir>/test/patch-canvas.js",
